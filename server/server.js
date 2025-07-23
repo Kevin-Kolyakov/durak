@@ -283,7 +283,7 @@ app.use(express.static(path.join(__dirname, '../client/build')));
 
 const indexPath = path.join(__dirname, '../client/build/index.html');
 
-app.get('/*', (req, res) => {
+app.get('/{*any}', (req, res) => {
   res.sendFile(indexPath);
 });
 

@@ -1,4 +1,5 @@
   const { getCardImageFilename } = require('./utils/cardImageMap');
+const path = require('path');
 
 
 const express = require('express');

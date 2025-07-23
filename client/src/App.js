@@ -5,7 +5,7 @@ import './App.css';
 import shuffleSound from './sounds/shuffle.wav';
 import jazz from './sounds/jazz.mp3';
 
-const socket = io('http://localhost:3001');
+const socket = io('https://durak-tuex.onrender.com');
 
 export default function App() {
   const [gameState, setGameState] = useState(null);

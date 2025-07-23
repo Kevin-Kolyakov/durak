@@ -47,7 +47,7 @@ function initializeGame() {
   const deck = createDeck();
   shuffle(deck);
   const hands = players.map(() => deck.splice(0, 6));
-  const trumpCard = deck[deck.length - 1];
+  const trumpCard = deck[0];
   trumpCard.img = getCardImageFilename(trumpCard);
   const trump = trumpCard.suit;
 

@@ -46,10 +46,10 @@ function beats(cardA, cardB, trump) {
 function initializeGame() {
   const deck = createDeck();
   shuffle(deck);
-  const trumpCard = deck[0];
+  const hands = players.map(() => deck.splice(0, 6));
+  const trumpCard = deck[deck.length - 1];
   trumpCard.img = getCardImageFilename(trumpCard);
   const trump = trumpCard.suit;
-  const hands = players.map(() => deck.splice(0, 6));
 
   let attacker = 0;
   let defender = 1;
